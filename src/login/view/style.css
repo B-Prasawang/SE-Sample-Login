@@ -1,3 +1,16 @@
 #rootPane {
     -fx-background-image: url("background-login.jpg");
 }
+
+#textField {
+    -fx-text-fill: #6c6c6c;
+    -fx-prompt-text-fill: #6c6c6c;
+}
+
+#btnLogin {
+    -fx-background-color: #627ed3;
+}
+
+#btnLogin:hover {
+    -fx-background-color: #434586;
+}

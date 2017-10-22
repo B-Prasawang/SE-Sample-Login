@@ -27,7 +27,7 @@ public class Main extends Application {
             Scene scene = new Scene(pane);
             scene.getStylesheets().addAll(Main.class.getResource("view/style.css").toExternalForm());
 
-            stage.setResizable(true);
+            stage.setResizable(false);
             stage.setTitle("Log in");
             stage.setScene(scene);
             stage.show();
