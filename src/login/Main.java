@@ -2,7 +2,6 @@ package login;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -14,18 +13,19 @@ public class Main extends Application {
     Stage stage;
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         this.stage = primaryStage;
         mainWindow();
     }
 
-    public void mainWindow(){
+    public void mainWindow() {
 
 
         try {
             FXMLLoader loader = new FXMLLoader(Main.class.getResource("view/login.fxml"));
             AnchorPane pane = loader.load();
             Scene scene = new Scene(pane);
+            scene.getStylesheets().addAll(Main.class.getResource("view/style.css").toExternalForm());
 
             stage.setResizable(true);
             stage.setTitle("Log in");
